@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% extends 'movie/base.html '%}
+    {% block title %}Movie Details{% endblock %}
+</head>
+<body>
+
+{% block body %}
+
+<img src="{{ movies.movie_logo }}" height="200px" width="200px">
+<h3>{{ movies.movie_title }}</h3>
+<h3> {{ movies.movie_genres }}</h3>
+<i width=40%>{{ movies.description }}</i>
+<form>
+    <textarea rows="10" cols="100">
+
+
+    </textarea>
+    <br />
+    <input type="submit" value="Submit" height="5px" width="8px"></input>
+</form>
+
+{% endblock %}
+</body>
+</html>
